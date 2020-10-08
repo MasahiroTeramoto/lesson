@@ -26,8 +26,7 @@ function adjustArray(nums1, nums2) {
         return num1 - num2;
     };
 
-    let concatNums = uniq(nums1.concat(nums2));
-    return concatNums.sort(key);
+    return uniq(nums1.concat(nums2)).sort(key);
 }
 
 function isNumber(val1, val2) {
@@ -65,9 +64,9 @@ function shouldCheckInputVal(fizNum, buzzNum) {
 function displayOutput(fizNum, buzzNum) {
     // display output
 
-    let fizArray = multipleHundredArray(parseInt(fizNum));
-    let buzzArray = multipleHundredArray(parseInt(buzzNum));
-    let fizbuzzArray = adjustArray(fizArray, buzzArray);
+    const fizArray = multipleHundredArray(parseInt(fizNum));
+    const buzzArray = multipleHundredArray(parseInt(buzzNum));
+    const fizbuzzArray = adjustArray(fizArray, buzzArray);
 
     const elem = document.getElementById('output');
 
