@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>FizzBuzz問題</title>
+    <style>
+        label {
+            margin-right: 0px;
+            width: 100px;
+            float: left;
+        }
+        
+        input[type="number"] {
+            width: 160px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>FizzBuzz問題</h1>
+        <div>
+            <label>FizNum:</label>
+            <input type="number" mix="1" max="99" placeholder="整数を入力してください" id="fiz-num" />
+        </div>
+        <div>
+            <label>BuzzNum:</label>
+            <input type="number" mix="1" max="99" placeholder="整数を入力してください" id="buzz-num" />
+        </div>
+        <div>
+            <input type="button" value="実行" onclick="clickBtn();" />
+        </div>
+        <br />
+        <div>【出力】</div>
+        <br />
+        <div id="output"></div>
+    </div>
+</body>
+
+</html>
+<script src="fizbuzz.js"></script>
